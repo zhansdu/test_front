@@ -1,0 +1,50 @@
+import { ref } from "vue";
+// import type { Plugin } from "vue";
+import { Modal as ModalComponent, Modal as ModalType } from "bootstrap";
+
+type AlertType="alert"|"confirm"
+
+// export const Alert = {} as Plugin;
+
+// const message_prop = ref("hi");
+// const type_prop = ref("alert" as AlertType);
+// const confirm_prop = ref(false);
+
+// Alert.install = () => {
+//   const app =createApp(AlertComponent,{
+//     message: message_prop.value,
+//     type: type_prop,
+//     confirm: (value: boolean) => {
+//       confirm_prop.value = value;
+//     },
+//     setModal: setModal
+//   });
+//   const container = document.getElementById("app") || document.createElement("div");
+//   const componentElement = app.mount("#app");
+//   console.log(container);
+//   container.appendChild(componentElement.$el);
+// };
+
+const message_prop = ref("hi");
+const type_prop = ref("alert" as AlertType);
+
+function setMessage(message:string){
+  message_prop.value=message;
+}
+function setType(type:AlertType){
+  type_prop.value=type;
+}
+
+
+const modalInstance = ref<ModalType>();
+
+export function setModal(){
+  modalInstance.value = new ModalComponent(document.getElementById("alert")||"div");
+}
+
+export function alert(message:string):void{
+  setType("alert");
+  setMessage(message);
+  modalInstance.value?.show();
+}
+// export function confirm()

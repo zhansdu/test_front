@@ -1,0 +1,6 @@
+--10.01.2024: 
+              yarn add axios, vue-axios
+              yarn add -D vite-plugin-checker
+              yarn add vue3 toastify
+--12.01.2024"
+              changed VITE_MAIN_ROUTE to '/teachers'

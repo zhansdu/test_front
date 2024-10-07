@@ -1,0 +1,26 @@
+// variables
+@import "./_colors";
+
+// bootstrap 5.3
+@import "bootstrap/scss/functions";
+
+@import './_bootstrap_variables';
+
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/variables-dark";
+
+@import './_bootstrap_maps';
+
+@import "bootstrap/scss/bootstrap";
+
+@import './_bootstrap_classes';
+
+@import 'bootstrap-icons/font/bootstrap-icons.css';
+
+// custom scss
+@import './_base';
+@import './_styles';
+
+@import "./_variables";
+
+@import './responsive';

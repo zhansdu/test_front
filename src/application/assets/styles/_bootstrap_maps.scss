@@ -1,0 +1,4 @@
+// rewrite bootstrap maps here
+
+// custom colors are imported from './_colors.scss'
+$theme-colors: map-merge($theme-colors, $custom_colors);

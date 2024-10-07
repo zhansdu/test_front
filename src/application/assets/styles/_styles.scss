@@ -1,0 +1,26 @@
+.navbar{
+  position: sticky;
+  top:0;
+  height: var(--navbar-height);
+  z-index: 3;
+}
+
+.cursor-pointer{
+  cursor: pointer;
+}
+
+.btn-outline-blue{
+  color:var(--blue)
+}
+.btn-outline-blue:hover{
+  color:#FFF
+}
+
+.btn-outline-green:hover{
+  color:#FFF
+}
+
+.main-padding{
+  padding-left: var(--padding-size);
+  padding-right: var(--padding-size);
+}

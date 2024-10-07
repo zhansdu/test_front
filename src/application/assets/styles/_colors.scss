@@ -1,0 +1,22 @@
+
+$custom_colors:(
+  "blue":       #225ce5,
+  "lightblue":  #e5ecff,
+  "indigo":     #7CADF0,
+  "purple":     #C79EED,
+  "red":        #F63B00,
+  "orange":     #FBB476,
+  "yellow":     #F8DA7E,
+  "green":      #4ECF4B,
+  "teal":       #20c997,
+  "cyan":       #7CADF0,
+
+  "lightgrey":  #F7F7F7,
+  "grey":       #BDBFC1,
+  "darkgrey":   #979797
+);
+:root{
+  @each $key,$value in $custom_colors{
+    --#{$key}:#{$value};
+  }
+}

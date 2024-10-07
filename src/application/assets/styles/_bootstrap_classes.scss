@@ -1,0 +1,10 @@
+// checkbox and radio button 
+.form-check-input:checked[type=radio]{
+  // background-image: url(/bootstrap.jpeg);
+  background-color: var(--blue);
+  border: 0;
+}
+
+select.form-select {
+  caret-color: var(--blue); /* Change to the desired color */
+}

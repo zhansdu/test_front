@@ -1,0 +1,52 @@
+@import url('https://fonts.cdnfonts.com/css/nunito');
+*,
+*::before,
+*::after {
+  scrollbar-color: #c5c5c5 white;
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: normal;
+  font-style: inherit;
+  font-size: inherit;
+  cursor: inherit;
+  color:inherit;
+  text-wrap: inherit;
+  transition: 0 !important;
+}
+:not(body){
+  transition: inherit;
+}
+*:focus {
+  outline: none !important;
+  border-color:none !important;
+  outline: 0 !important;
+  box-shadow: none !important;
+}
+
+html{
+  font-size: 12.8px;
+}
+
+body {
+  transition:color 0.5s,background-color 0.5s;
+  font-family: 'Nunito', sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a{
+  cursor: pointer;
+  text-decoration: none;
+  color:inherit
+}
+a:hover{
+  color:inherit;
+}
+
+h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
+  margin-bottom: 0;
+}
+ul,ol{
+  margin:0px;
+}
